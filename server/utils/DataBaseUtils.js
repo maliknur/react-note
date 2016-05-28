@@ -1,11 +1,13 @@
 import mongoose from 'mongoose';
 import '../models/Note';
+import config from '../../config/config.json';
 
 const Note = mongoose.model('Note');
 
+
 // establish mongodb connection
 export function setupConnection() {
-	mongoose.connect('mongodb://localhost/notes');
+	mongoose.connect('mongodb://'+config.db.host+'/'+config.db.name);
 }
 
 // get all notes from mondodb
