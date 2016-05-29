@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ColorPicker from './ColorPicker.jsx';
+
 import './NoteEditor.less';
 
 const NotesEditor = React.createClass({
@@ -33,6 +35,10 @@ const NotesEditor = React.createClass({
 
 	},
 
+	handleColorChange(color) {
+		this.setState({ color });
+	},
+
 	render() {
 		return (
 				<div className='NoteEditor'>	
@@ -51,6 +57,10 @@ const NotesEditor = React.createClass({
 						onChange = {this.handleTextChange}
 					/>
 					<div className = 'NoteEditor__footer'>
+						<ColorPicker
+							value = {this.state.color}
+							onChange = {this.handleColorChange}
+						/>
 						<button
 							className = 'NoteEditor__button'
 							disabled = {!this.state.text}
