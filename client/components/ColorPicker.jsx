@@ -3,7 +3,7 @@ import cx from 'classnames';
 
 import './ColorPicker.less';
 
-const COLORS = ['#FFFFFF', '#80D8FF', '#FFFF8D', '#FF8A80', '#CCFF90', '#CFD8DC', '#FFD180'];
+const COLORS = ['#E57373', '#F06292', '#7986CB', '#64B5F6', '#4FC3F7', '#81C784', '#DCE775', '#FFF176', '#FFD54F', '#FFB74D'];
 
 const ColorPicker = React.createClass({
     render() {
