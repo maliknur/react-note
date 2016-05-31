@@ -3,10 +3,16 @@ Notes App build with React, Node.js, MongoDB and Webpack
 
 
 ## Prerequisites
-MongoDB is installed locally
+MongoDB is installed and up running **[how to install?]**
+[how to install?]: https://docs.mongodb.com/manual/installation/
 
-Node.js and npm installed locally
+Node.js and npm installed **[quick reference]**
+[quick reference]: https://docs.npmjs.com/getting-started/installing-node
 
+Babel5 installed 
+```
+npm install -g babel@5
+```
 
 ## Install
 ```
